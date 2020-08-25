@@ -1,6 +1,4 @@
-# csci000-astudent
-
-## A sample github repo demonstrating how to turn in assignments and labs
+# CSCI310-jedwards
 
 | Joseph Edwards | Value |
 |:---|:---|
