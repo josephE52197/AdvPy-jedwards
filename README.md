@@ -16,13 +16,13 @@
 
 | Name | Value |
 | :--- | :--- |
-| Name | Hello World |
-| Description | A basic hello world program |
-| Due Date | 1-Jan-20 |
+| Name | Hangman Game |
+| Description | A simple Hangman game |
+| Due Date | 10-6-20|
 | Status | Done |
-| Location | https://github.com/rambasnet/csci000-astudent/tree/master/python/hello |
+| Location | https://github.com/josephE52197/AdvPy-jedwards/tree/master/Project1|
 | Self Grade | 100/100 |
-| Notes | completed all the requirements and tested program many times; solution accepted by kattis; screenshot found in the same location |
+| Notes | The game is fully functional and can be played in the command line. To play, guess the letters of the word until you get it right. If you guess wrong 6 times, you lose. You may continue to play as long as you wish, and your stats will be recorded.
 
 ### Assignment #2
 
