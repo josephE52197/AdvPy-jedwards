@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 import random
-def display_hangman(tries):
+def print_hangman(tries):
     stages = [  """
                    --------
                    |      |
@@ -84,20 +84,20 @@ def game(hman_words):
     tries = 6
     while playagain:
         print("You ready for some hangman?")
-        print(display_hangman(tries))
+        print(print_hangman(tries))
         print(finished_word , "\n")
         while not done and tries > 0:
-            guess = input("guess a letter: ").upper()
+            guess = input("Guess a letter: ").upper()
             if guess in guessed_letters:
-                print("you already guessed that")
-            elif guess not in secretword and guess.isalpha():
+                print("You already guessed that")
+            elif guess not in secretword and (guess.isalpha() and len(guess) == 1):
                 print("Sorry, your guess was wrong. You have ",tries, ' tries remaining')
                 tries -= 1
                 guessed_letters.append(guess)
             elif guess in secretword:
-                    print("Nice one,", guess, "is in the word!")
+                    print("Way to be,", guess, "was a good guess!")
                     guessed_letters.append(guess)
-                    word_as_list = list(finished_word)
+                    word_as_list = list(finished_word) 
                     indices = [i for i, letter in enumerate(secretword) if letter == guess]
                     for index in indices:
                         word_as_list[index] = guess
@@ -106,11 +106,10 @@ def game(hman_words):
                         done = True
             else:
                 print("Not a correct input")
-            print(display_hangman(tries))
+            print(print_hangman(tries))
             print(finished_word, "\n")
-
         if done:
-            ans = input("Congratulations! Would you like to play again? Y/N")
+            ans = input("Congratulations! Would you like to play again? Y/N: ")
             num_games += 1
             num_wins += 1
             if ans.upper() == 'Y':
@@ -128,7 +127,7 @@ def game(hman_words):
             print("Sorry, the word was ", secretword , "\n")
             num_games += 1
             num_losses += 1
-            ans = input("Would you like to play again? Y/N ")
+            ans = input("Would you like to play again? Y/N: ")
             if ans.upper() == 'Y':
                 secretword = random.choice(hman_words).upper()
                 finished_word = "_" * len(secretword)
@@ -140,9 +139,6 @@ def game(hman_words):
                 playagain = False
                 print("Thanks for playing!", "\n")
                 print("Total games: ", num_games , "Total Wins: ", num_wins, "Total Losses: ", num_losses)  
-
-
-
 
 def main():
     hman_words = []
