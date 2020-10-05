@@ -1,0 +1,5 @@
+print('\n\nHello there! I need your help. Quick!\n\nYou must save this man! He is innocent I tell you!\n\n')
+mission = input('Do you accept this mission?? (y/n): ')
+name = input('What\'s your name brave soldier? \nName - ')
+#print('Hello, ', name ". Thank goodness you're here.")
+print('\n\nTo save him, you must enter the correct word into the generator.\n\n')
