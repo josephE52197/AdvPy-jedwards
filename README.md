@@ -29,7 +29,7 @@
 | Name | Value |
 | :--- | :--- |
 | Name | Kattis Problems |
-| Description | [Solved three Kattis problems of varying difficulites|
+| Description | Solved three Kattis problems of varying difficulites|
 | Due Date | 16-Nov-2020 |
 | Status | Done |
 | Location | https://github.com/josephE52197/AdvPy-jedwards/tree/master/Project2 |
