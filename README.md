@@ -36,4 +36,14 @@
 | Self Grade | 100/100 |
 | Notes | Completed every problem and wrote test cases using the unittest library in python3 |
 
+### Assignment #3
 
+| Name | Value |
+| :--- | :--- |
+| Name | Final Project - Kattis Problems |
+| Description | Solved three Kattis problems of varying difficulites|
+| Due Date | 7-Dec-2020 |
+| Status | Done |
+| Location | https://github.com/josephE52197/AdvPy-jedwards/tree/master/Final_Project |
+| Self Grade | 100/100 |
+| Notes | Solved three Kattis problems with difficulties of 2.0, 2.1, and 2.2, as well as wrote test cases using the unittest library |
