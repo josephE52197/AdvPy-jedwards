@@ -20,7 +20,6 @@ def solve():
         obst = int(input())
         if obst not in nums and obst in list(range(n)):
             nums.append(obst)
-    print(nums)
     print(answer(n,m,nums)) 
 
 if __name__ == "__main__":
